@@ -1,0 +1,102 @@
+body {
+  background-image: url("green.jpg")
+}
+
+.hide {
+  display: none !important;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #000000;
+}
+
+.header__menu {
+  position: relative;
+}
+
+.header__menu .menu__btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header__menu .menu__btn svg {
+  width: 50px;
+  height: 50px;
+}
+
+.header__menu .menu__list {
+  margin: 0;
+  padding: 10px 20px;
+  list-style-type: none;
+  border-radius: 4px;
+  background: #faea05;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(100%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: menu-showing 0.3s;
+}
+
+.header__menu .menu__link {
+  font-size: 14px;
+  line-height: 16px;
+  color: #000;
+  text-decoration: none;
+}
+
+@keyframes menu-showing {
+  from {
+    transform: translateY(95%);
+  }
+}
+/* Прописать стили для блока info и portifolio нужно самостоятельно */
+
+.info {
+  font-size: 30px;
+  line-height: 40px;
+  color: #0f0f0f;
+  text-decoration: none;
+}
+
+/* стилизуем текст "о себе" */
+.info__title {
+font-size: 70px;
+color: purple;
+text-decoration: none;
+}
+
+/* стилизуем текст с информацией о себе */
+.info__fullname {
+color: indigo;
+}
+
+/* стилизуем логотип */
+.header__logo {
+font-size:100px;
+color: wheat;
+}
+
+/* стилизуем текст в кнопке */
+.portfolio__btn {
+color: purple;
+font-size:20px;
+}
